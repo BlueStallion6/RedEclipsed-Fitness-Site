@@ -1,10 +1,7 @@
-:root {
-    overflow: hidden;
-}
-
 body {
     margin: 0;
     background-color: #000;
+    font-family: 'Arial', sans-serif; /* Add a font for better styling */
 }
 
 #main_imagine_sala_container {
@@ -15,27 +12,11 @@ body {
     position: absolute;
 
     filter: blur(8px) contrast(1.0) brightness(1.0);
-    
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-}
-
-#main_imagine_sala {
-    width: 100%;
-    height: 100%;
-}
-
-#background {
-    height: 100%;
-    width: 100%;
 
     top: 0;
     left: 0;
-    right: 0;
-    
+    width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -45,21 +26,69 @@ body {
     align-items: center;
     position: relative;
     height: 100vh;
-}
-
-.text-1 {
-    color: #000000;
+    z-index: 1;
 }
 
 .main_text_center {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 51%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #FFFFFF;
+    color: #e4e1e1; /* White color to stand out against the background */
+    font-size: 4vw; /* Use viewport width for responsiveness */
+    font-weight: 600; /* Make the text bold */
+    letter-spacing: 0px; /* Add spacing between letters for readability */
     z-index: 1;
+    text-shadow: 2px 2px 4px rgba(253, 6, 191, 0.5); /* Adds subtle shadow for better contrast */
+}
 
-    font-weight: bold;
-    font-size: 5vw;
+
+.main_text_2 {
+
+    position: absolute;
+    top: 46%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ecc9fafb;
+    font-size: 1.7vw;
+    font-weight: 600;
+    z-index: 1;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for better contrast */
+
+}
+
+
+
+nav {
+    position: relative;
+    z-index: 10; 
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 700px; 
+    z-index: 10;
+}
+
+.button {
+    display: inline-block; 
+    padding: 25px 84px; 
+    font-size: 28px; 
+    color: rgb(2, 15, 8); 
+    background-color: #e83cf8;
+    border: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px; 
+    text-decoration: none; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; 
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #15e472; /* Darker green on hover */
 }
