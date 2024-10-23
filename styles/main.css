@@ -1,0 +1,65 @@
+:root {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+#main_imagine_sala_container {
+    background-image: url('/resources/gym6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    filter: blur(8px) contrast(1.0) brightness(1.0);
+    
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#main_imagine_sala {
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 0;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.text-1 {
+    color: #000000;
+}
+
+.main_text_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+
+    font-weight: bold;
+    font-size: 5vw;
+}
