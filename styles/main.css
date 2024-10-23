@@ -1,4 +1,4 @@
-body {
+body.page1 {
     margin: 0;
     background-color: #000;
     font-family: 'Arial', sans-serif; /* Add a font for better styling */
@@ -91,4 +91,9 @@ nav {
 
 .button:hover {
     background-color: #15e472; /* Darker green on hover */
+}
+
+
+body.page2 {
+    background-color: rgb(105, 35, 68); /* Set a different background color */
 }
