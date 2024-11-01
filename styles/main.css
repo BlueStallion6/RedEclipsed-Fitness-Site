@@ -1,11 +1,11 @@
 body.page1 {
     margin: 0;
     background-color: #000;
-    font-family: 'Arial', sans-serif; /* Add a font for better styling */
+    font-family: 'Arial', sans-serif; 
 }
 
 #main_imagine_sala_container {
-    background-image: url('/resources/gym6.jpg');
+    background-image: url('/resources/gym7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,32 +31,48 @@ body.page1 {
 
 .main_text_center {
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 51%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #e4e1e1; /* White color to stand out against the background */
-    font-size: 4vw; /* Use viewport width for responsiveness */
-    font-weight: 600; /* Make the text bold */
-    letter-spacing: 0px; /* Add spacing between letters for readability */
+    color: #d0ff00; 
+    font-size: 4vw; 
+    font-weight: 600; 
+    letter-spacing: 0px; 
     z-index: 1;
-    text-shadow: 2px 2px 4px rgba(253, 6, 191, 0.5); /* Adds subtle shadow for better contrast */
+    text-shadow: 2px 2px 4px rgba(16, 79, 255, 0.979);
 }
 
 
 .main_text_2 {
 
     position: absolute;
-    top: 46%;
+    top: 45%;
     left: 51%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #ecc9fafb;
+    color: #98e024;
     font-size: 1.7vw;
     font-weight: 600;
     z-index: 1;
     letter-spacing: -1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for better contrast */
+    text-shadow: 2px 2px 4px rgba(5, 10, 255, 0.5); 
+
+}
+
+.main_text_3 {
+
+    position: absolute;
+    top: 93%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f8f8f8fb;
+    font-size: 1.3vw;
+    font-weight: 200;
+    z-index: 1;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 
 }
 
@@ -70,16 +86,16 @@ nav {
 .button-container {
     display: flex; 
     justify-content: center; 
-    margin-top: 700px; 
+    margin-top: 640px; 
     z-index: 10;
 }
 
 .button {
     display: inline-block; 
-    padding: 25px 84px; 
+    padding: 28px 86px; 
     font-size: 28px; 
     color: rgb(2, 15, 8); 
-    background-color: #e83cf8;
+    background-color: #73fdf2;
     border: none; 
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 50px; 
@@ -90,10 +106,10 @@ nav {
 }
 
 .button:hover {
-    background-color: #15e472; /* Darker green on hover */
+    background-color: #00ff22; 
 }
 
 
 body.page2 {
-    background-color: rgb(105, 35, 68); /* Set a different background color */
+    background-color: rgb(42, 121, 35); 
 }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Splituri</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000e5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #dbf0fc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+            text-shadow: 2px 2px 4px rgba(245, 76, 10, 0.438);
+        }
+        p {
+            font-size: 1.2em;
+        }
+       
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 1em;
+        }
+        .button2 {
+            padding: 10px 20px;
+            background-color: #3981d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 1em;
+        }
+        .button:hover {
+            background-color: #388E3C;
+        }
+        .button2:hover {
+            background-color: #1826eb;
+        }
+      
+        .fixed-image {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-image: url('https://via.placeholder.com/150');
+            background-size: cover;
+            border-radius: 50%;
+        }
+      
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        textarea, input[type="file"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Vă mulțumim pentru completarea formularului!");
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Workout Splituri</h1>
+    <p>Un program de workout split presupune împărțirea antrenamentelor pe grupe musculare sau pe zile diferite, ceea ce ajută la o recuperare optimă și o creștere eficientă a masei musculare. Iată câteva exemple:</p>
+
+    <h2>Tipuri de Workout Splituri:</h2>
+    <ul>
+        <li>Push-Pull-Legs (PPL)</li>
+        <li>Bro Split (Fiecare grupă musculară antrenată o dată pe săptămână)</li>
+        <li>Upper-Lower Split</li>
+    </ul>
+
+    
+    <h2>Videoclip Explicativ</h2>
+    <iframe width="100%" height="300" src="https://www.youtube.com/embed/watch?v=eQi-H93Im8o" title="Videoclip despre workout splits"></iframe>
+
+   
+    <div class="fixed-image"></div>
+
+    
+    <h2>Înregistrare pentru Programul de Antrenament</h2>
+    <form onsubmit="showAlert(); return false;">
+        
+        <div class="form-group">
+            <label>Selectează tipul de split preferat:</label>
+            <input type="checkbox" name="split" value="PPL"> Push-Pull-Legs<br>
+            <input type="checkbox" name="split" value="Bro Split"> Bro Split<br>
+            <input type="checkbox" name="split" value="Upper-Lower"> Upper-Lower Split<br>
+        </div>
+
+        <div class="form-group">
+            <label>Experiență de antrenament:</label>
+            <input type="radio" name="experienta" value="Începător"> Începător<br>
+            <input type="radio" name="experienta" value="Intermediar"> Intermediar<br>
+            <input type="radio" name="experienta" value="Avansat"> Avansat<br>
+        </div>
+
+    
+        <div class="form-group">
+            <label>Frecvența de antrenament săptămânală:</label>
+            <select name="frecventa">
+                <option value="3">3 zile</option>
+                <option value="4">4 zile</option>
+                <option value="5">5 zile</option>
+                <option value="6">6 zile</option>
+            </select>
+        </div>
+
+      
+        <div class="form-group">
+            <label>Observații suplimentare:</label>
+            <textarea rows="4" placeholder="Scrie aici orice observații..."></textarea>
+        </div>
+
+    
+        <div class="form-group">
+            <label>Încarcă un fișier cu obiectivele tale:</label>
+            <input type="file" name="document">
+        </div>
+
+    
+        <div class="form-group">
+            <button type="submit" class="button">Trimite</button>
+            <button type="reset" class="button">Resetare</button>
+        </div>
+    </form>
+
+ 
+    <div class="navigation-links">
+        <a href="index.html" class="button2">Înapoi la Prima Pagină</a>
+        <a href="page6.html" class="button2">Despre suplimente</a>
+    </div>
+</div>
+
+</body>
+</html>
